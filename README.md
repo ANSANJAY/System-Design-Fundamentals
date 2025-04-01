@@ -1,6 +1,14 @@
 # System Design Fundamentals
 
-Welcome to the **System Design Fundamentals** repository! This repository covers foundational and advanced concepts related to system design, including topics such as load balancing, caching, messaging systems, data partitioning, and more.
+## 🌟 Introduction to System Design
+
+To excel in system design, one of the most crucial aspects is to develop a deep understanding of fundamental system design concepts such as **Load Balancing, Caching, Partitioning, Replication, Databases, and Proxies**.
+
+This course will cover key concepts that can make a significant difference in your ability to tackle system design problems. These concepts range from understanding the intricacies of **API Gateway** and mastering **Load Balancing** techniques to grasping the importance of **CDNs** and appreciating the role of **Caching** in modern distributed systems. By the end of this course, you’ll have a comprehensive understanding of these essential ideas and the confidence to apply them in your next interview.
+
+When discussing system design interviews, it's important to note that they are inherently unstructured. During the interview, it can be challenging to maintain focus and ensure all crucial elements of the design are addressed. This course aims to guide you in answering any system design interview question by ensuring you do not miss discussing any critical aspect.
+
+Let's get started! 🚀
 
 ## 📂 Repository Structure
 
