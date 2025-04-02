@@ -30,7 +30,7 @@
 ```
 
 
-### **GitHub Notes (Activity 2): Load Balancing Algorithms**  
+### **Load Balancing Algorithms**  
 
 ---
 
@@ -203,6 +203,4 @@ In real-world scenarios, the choice of load balancing algorithm depends on:
 - **Server Capacity:** Homogeneous vs. Heterogeneous  
 - **Performance Requirements:** Response time, session persistence  
 
----
 
-Let me know if you would like to make any changes or move on to the next activity! 🚀
