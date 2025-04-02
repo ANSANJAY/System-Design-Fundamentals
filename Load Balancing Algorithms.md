@@ -28,25 +28,27 @@
 | - Maintains consistent user experience with session persistence                                                                                        |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
+  
+
 ```
 +-----------------------+-------------------------+
-| Basic Algorithms      | Dynamic Algorithms       |
+|      Basic Algorithms |    Dynamic Algorithms    |
 | --------------------  | ------------------------ |
-| Round Robin           | Least Connections         |
-| Random                | Least Response Time       |
-|                       | Least Bandwidth           |
+|      Round Robin      |    Least Connections      |
+|       Random          |   Least Response Time     |
+|                       |    Least Bandwidth        |
 +-----------------------+-------------------------+
 | Weighted Algorithms   | Session Persistence       |
 | --------------------  | ------------------------ |
-| Weighted Round Robin  | IP Hash                   |
+| Weighted Round Robin  |        IP Hash            |
 | Weighted Least Conn.  |                          |
 +-----------------------+-------------------------+
-| Custom Algorithms                                 |
+|       Custom Algorithms                           |
 | --------------------                              |
-| Custom Load                                       |
+|       Custom Load                                 |
 +-----------------------+-------------------------+
-```
 
+```
 
 ### **Load Balancing Algorithms**  
 
