@@ -28,6 +28,24 @@
 | - Maintains consistent user experience with session persistence                                                                                        |
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
+```
++-----------------------+-------------------------+
+| Basic Algorithms      | Dynamic Algorithms       |
+| --------------------  | ------------------------ |
+| Round Robin           | Least Connections         |
+| Random                | Least Response Time       |
+|                       | Least Bandwidth           |
++-----------------------+-------------------------+
+| Weighted Algorithms   | Session Persistence       |
+| --------------------  | ------------------------ |
+| Weighted Round Robin  | IP Hash                   |
+| Weighted Least Conn.  |                          |
++-----------------------+-------------------------+
+| Custom Algorithms                                 |
+| --------------------                              |
+| Custom Load                                       |
++-----------------------+-------------------------+
+```
 
 
 ### **Load Balancing Algorithms**  
@@ -38,6 +56,102 @@
 A **load balancing algorithm** is a method used to distribute incoming network traffic across multiple servers. The primary goal of using these algorithms is to ensure that no single server is overloaded, thereby maintaining **high availability**, **reliability**, and **optimal performance**.  
 
 By distributing traffic efficiently, these algorithms prevent any server from becoming a bottleneck, optimizing response times, and enhancing the **user experience**.  
+
+---
+Remembering all the load balancing algorithms can be tricky, but here’s a structured way to make it easier:
+
+---
+
+### **1. Mnemonic to Remember Load Balancing Algorithms:**  
+Let’s use a mnemonic that’s easy to recall:  
+**"Really Lazy Writers Love Iced Lattes, Rarely Buying Coffee."**  
+
+- **R:** **Round Robin**  
+- **L:** **Least Connections**  
+- **W:** **Weighted Round Robin**  
+- **L:** **Weighted Least Connections**  
+- **I:** **IP Hash**  
+- **L:** **Least Response Time**  
+- **R:** **Random**  
+- **B:** **Least Bandwidth**  
+- **C:** **Custom Load**  
+
+---
+
+### **2. Fun Story to Tie Them Together:**  
+Imagine a **writer’s cafe** where people come to **write and relax**.  
+- **Round Robin:** Writers take turns using the **best seat** (everyone gets a chance).  
+- **Least Connections:** The **barista** gives coffee to the person with **no cup** or **few cups** around them (least load).  
+- **Weighted Round Robin:** The **frequent writers** (VIPs) get **served first** (priority).  
+- **Weighted Least Connections:** VIPs get **served more**, but if they’re **busy**, it goes to the next available person.  
+- **IP Hash:** Regulars always **sit at their favorite spot**.  
+- **Least Response Time:** Serve the **fastest coffee drinker** to keep the line moving.  
+- **Random:** Serve coffee to **whoever the barista sees first**.  
+- **Least Bandwidth:** Give coffee to the person using the **fewest devices** (less internet usage).  
+- **Custom Load:** The **manager** decides based on **complex rules** (like order size, loyalty points, and wait time).  
+
+---
+
+### **3. Visual Acronym Cheat Sheet:**  
+```
++-------------------------+
+|  R   - Round Robin       |
+|  L   - Least Connections |
+|  W   - Weighted RR       |
+|  L   - Weighted LC       |
+|  I   - IP Hash           |
+|  L   - Least Response    |
+|  R   - Random            |
+|  B   - Least Bandwidth   |
+|  C   - Custom Load       |
++-------------------------+
+```
+
+---
+
+### **4. Grouping the Algorithms (By Logic):**  
+
+#### **1. Basic Algorithms:**  
+- **Round Robin (R)** - Simple and sequential  
+- **Random (R)** - Unpredictable distribution  
+
+#### **2. Dynamic Algorithms (Based on Load):**  
+- **Least Connections (L)** - Chooses server with the fewest active connections  
+- **Least Response Time (L)** - Chooses the server that replies fastest  
+- **Least Bandwidth (B)** - Chooses the server using the least bandwidth  
+
+#### **3. Weighted Algorithms (Capacity-Based):**  
+- **Weighted Round Robin (W)** - More powerful servers handle more requests  
+- **Weighted Least Connections (L)** - Combines least connections and server capacity  
+
+#### **4. Session Persistence Algorithm:**  
+- **IP Hash (I)** - Routes requests from the same IP to the same server  
+
+#### **5. Custom Algorithms:**  
+- **Custom Load (C)** - Uses custom metrics for complex decisions  
+
+---
+
+### **5. Visualization:**  
+```
++-----------------------+-------------------------+
+| Basic Algorithms      | Dynamic Algorithms       |
+| --------------------  | ------------------------ |
+| Round Robin           | Least Connections         |
+| Random                | Least Response Time       |
+|                       | Least Bandwidth           |
++-----------------------+-------------------------+
+| Weighted Algorithms   | Session Persistence       |
+| --------------------  | ------------------------ |
+| Weighted Round Robin  | IP Hash                   |
+| Weighted Least Conn.  |                          |
++-----------------------+-------------------------+
+| Custom Algorithms                                 |
+| --------------------                              |
+| Custom Load                                       |
++-----------------------+-------------------------+
+```
+
 
 ---
 
