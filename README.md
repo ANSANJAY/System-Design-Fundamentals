@@ -1,4 +1,4 @@
-# System Design Fundamentals
+# System Design Fundamental
 
 ## 🌟 Introduction to System Design
 
